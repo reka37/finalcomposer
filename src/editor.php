@@ -1,6 +1,18 @@
 <?php
 namespace irek\editor;
-class Edit {
+
+/**
+*@abstract
+*/
+abstract class Quill
+{
+	abstract function run();
+}
+
+/**
+* Вывод редактора
+*/
+class Editor {
 	public function run(){
 		echo '<div id="quillEditor" style="height:300px"></div>';
 	}
